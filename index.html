@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <style>html.i18n-loading body{visibility:hidden}</style>
+<script>
+(function(){var d=document.documentElement,l='fa';
+try{l=localStorage.getItem('site-lang')||'fa'}catch(e){}
+d.lang=l;d.dir=l==='fa'?'rtl':'ltr';d.classList.add('i18n-loading');
+setTimeout(function(){d.classList.remove('i18n-loading')},1500);})();
+</script>
+  <title>Kimia Gallery — Coffee House in Tehran</title>
+  <meta name="description" content="Kimia Gallery is a coffee house in Tehran serving fresh coffee, sandwiches, cakes and drinks in a calm, art-filled space.">
+  <meta name="theme-color" content="#0c0d12">
+  <meta name="author" content="Kimia Gallery">
+  <link rel="icon" href="imgs/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="imgs/gallery-hero.png" fetchpriority="high">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Karla:wght@300;400;500;600&family=Vazirmatn:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <!-- Soft glowing background shapes (the glass blurs these) -->
+  <div class="bg" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <button class="lang-btn" id="langBtn" type="button" data-no-i18n aria-label="Switch language">EN</button>
+  <!-- Hamburger button -->
+  <button class="burger" id="burger" aria-label="Open navigation" aria-expanded="false" aria-controls="drawer">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- Hamburger drawer: menu links -->
+  <div class="scrim" id="scrim"></div>
+  <nav class="drawer glass" id="drawer" aria-label="Main navigation" aria-hidden="true">
+    <ul>
+      <li><a href="pages/menu.html#coffee">Coffee's</a></li>
+      <li><a href="pages/menu.html#mains">Main courses</a></li>
+      <li><a href="pages/menu.html#desserts">Desserts</a></li>
+      <li><a href="pages/menu.html#drinks">Drinks</a></li>
+      <li><a href="pages/menu.html#reservations">Reservations</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+
+    <!-- Top: title -->
+    <header class="title glass">
+      <p class="eyebrow">Coffee house · Tehran</p>
+      <h1 data-no-i18n>Kimia Gallery</h1>
+      <p class="est">Good taste, fresh coffee</p>
+
+      <div class="hero-actions">
+        <a class="cta hero-cta" href="pages/menu.html">View the menu</a>
+        <ul class="hero-cats" aria-label="Menu categories">
+          <li><a href="pages/menu.html#coffee">Coffee's</a></li>
+          <li><a href="pages/menu.html#mains">Main courses</a></li>
+          <li><a href="pages/menu.html#desserts">Desserts</a></li>
+          <li><a href="pages/menu.html#drinks">Drinks</a></li>
+          <li><a href="pages/menu.html#reservations">Reservations</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Middle: featured interior -->
+    <figure class="feature glass">
+      <div class="feature-frame">
+        <img src="imgs/gallery-hero.png" alt="Kimia Gallery interior" width="1536" height="1024" fetchpriority="high" decoding="async">
+      </div>
+      <figcaption class="feature-caption">
+        <span class="kicker">Welcome</span>
+        <span class="cap-text">Moments worth enjoying.</span>
+      </figcaption>
+    </figure>
+
+    <!-- About -->
+    <section class="about glass">
+      <p id="about">Good taste, fresh coffee, and moments worth enjoying. At Kimia Gallery, discover unique flavours and make every visit a memorable experience.</p>
+    </section>
+
+    <!-- Secondary link -->
+    <a class="reserve-link" href="pages/menu.html#reservations">Reserve a table</a>
+
+    <footer class="site-foot">
+      <p>Iran - Tehran - Vanak · Open every day, 12:00 – 23:00</p>
+    </footer>
+
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/lang.js"></script>
+</body>
+</html>
