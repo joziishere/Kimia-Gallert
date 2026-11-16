@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" role="img" aria-label="Kimia Gallery monogram">
+  <circle cx="60" cy="60" r="55" stroke="#efe7d8" stroke-opacity=".9" stroke-width="1.2"/>
+  <circle cx="60" cy="60" r="47.5" stroke="#cfa96b" stroke-opacity=".55" stroke-width=".7"/>
+  <path d="M46 36v48" stroke="#efe7d8" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M46 61 73 36" stroke="#efe7d8" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M46 61l27 25" stroke="#efe7d8" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="80" cy="30" r="3.2" fill="#cfa96b"/>
+</svg>
